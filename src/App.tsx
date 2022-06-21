@@ -1,23 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import Home from './Routes/Home';
-import Appointments from './Routes/Appointments';
-import SearchGroomers from './Routes/SearchGroomers';
-import Services from './Routes/Services';
+import Home from './Routes/home/Home';
+import Appointments from './Routes/appointments/Appointments';
+import SearchGroomers from './Routes/searchgroomers/SearchGroomers';
+import Services from './Routes/services/Services';
+import Nav from './Components/NavBar';
 
 function App() {
   return (
-    <div >
+ 
+ <>
+<Nav />
 <Routes> 
-  <Route path='/Home' element={<Home/>}/>
-  <Route path='/Appointments' element={<Appointments/>}/>
-  <Route path='/Searchgroomers' element={<SearchGroomers/>}/>
-  <Route path='/Services' element={<Services/>}/>
+  <Route path='/' element={<Home/>}/>
+  <Route path='/appointments' element={<Appointments/>}/>
+  <Route path='/searchgroomers' element={<SearchGroomers/>}/>
+  <Route path='/services' element={<Services/>}/>
 
 </Routes>
-    </div>
+    </>
   );
 }
 
