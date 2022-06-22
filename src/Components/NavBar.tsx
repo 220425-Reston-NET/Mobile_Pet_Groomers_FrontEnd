@@ -5,7 +5,7 @@ function Nav() {
   return (
     <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
-            <a className="navbar-brand" href="#">Navbar</a>
+            <a className="navbar-brand" href="#">Mobile Pet Groomers</a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
             </button>
@@ -21,10 +21,10 @@ function Nav() {
                     <Link to="/login" className="nav-link">Login</Link>
                     </li>
                     <li className="nav-item">
-                    <Link to="/services" className="nav-link">Services</Link>
+                    <Link to="/Services" className="nav-link">Services</Link>
                     </li>
                     <li className="nav-item">
-                    <Link to="/customerinfo" className="nav-link">Customer infromation</Link>
+                    <Link to="/Searchgroomers" className="nav-link">Search Customer</Link>
                     </li>
                     <li className="nav-item">
                     <Link to="/appointments" className="nav-link">Appointments</Link>
