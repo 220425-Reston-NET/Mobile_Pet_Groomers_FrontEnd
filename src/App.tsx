@@ -6,19 +6,21 @@ import Appointments from './Routes/appointments/Appointments';
 import SearchGroomers from './Routes/searchgroomers/SearchGroomers';
 import Services from './Routes/services/Services';
 import Nav from './Components/NavBar';
+import Login from './Routes/login/login';
 
 function App() {
   return (
  
  <>
-<Nav />
-<Routes> 
-  <Route path='/' element={<Home/>}/>
-  <Route path='/appointments' element={<Appointments/>}/>
-  <Route path='/searchgroomers' element={<SearchGroomers/>}/>
-  <Route path='/services' element={<Services/>}/>
+ <Nav />
+ <Routes> 
+    <Route path='/' element={<Home/>}/>
+   <Route path='/login' element={<Login/>}/>
+   <Route path='/appointments' element={<Appointments/>}/>
+   <Route path='/searchgroomers' element={<SearchGroomers/>}/>
+   <Route path='/services' element={<Services/>}/>
 
-</Routes>
+ </Routes>
     </>
   );
 }
