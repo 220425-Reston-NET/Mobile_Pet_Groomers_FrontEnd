@@ -39,10 +39,10 @@ function SearchGroomers() {
       <option>...</option>
     </select>
   </div>
-  <div className="col-md-2">
+  {/* <div className="col-md-2">
     <label htmlFor="inputZip" className="form-label">Zip</label>
     <input type="text" className="form-control" id="inputZip" />
-  </div>
+  </div> */}
   <div className="col-12">
     <div className="form-check">
       <input className="form-check-input" type="checkbox" id="gridCheck" />

@@ -15,7 +15,7 @@ function Nav() {
                     <Link to="/" className="nav-link">Home</Link>
                     </li>
                     <li className="nav-item">
-                    <Link to="/createAccount" className="nav-link">Create Your Account</Link>
+                    <Link to="/register" className="nav-link">Register</Link>
                     </li>
                     <li className="nav-item">
                     <Link to="/login" className="nav-link">Login</Link>
@@ -24,7 +24,7 @@ function Nav() {
                     <Link to="/Services" className="nav-link">Services</Link>
                     </li>
                     <li className="nav-item">
-                    <Link to="/Searchgroomers" className="nav-link">Search Customer</Link>
+                    <Link to="/Searchgroomers" className="nav-link">Search Appointment</Link>
                     </li>
                     <li className="nav-item">
                     <Link to="/appointments" className="nav-link">Appointments</Link>

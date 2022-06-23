@@ -1,12 +1,9 @@
 import { useState } from 'react';
-import "./register.css";
 export default function Form() {
-
-
 
 // States for registration
 const [name, setName] = useState('');
-// const [email, setEmail] = useState('');
+const [email, setEmail] = useState('');
 const [password, setPassword] = useState('');
 
 // States for checking the errors
@@ -14,27 +11,27 @@ const [submitted, setSubmitted] = useState(false);
 const [error, setError] = useState(false);
 
 // Handling the name change
-const handleName = (e : any) => {
+const handleName = (e) => {
 setName(e.target.value);
 setSubmitted(false);
 };
 
 // Handling the email change
-const handleEmail = (e : any) => {
-// setEmail(e.target.value);
+const handleEmail = (e) => {
+setEmail(e.target.value);
 setSubmitted(false);
 };
 
 // Handling the password change
-const handlePassword = (e : any) => {
+const handlePassword = (e) => {
 setPassword(e.target.value);
 setSubmitted(false);
 };
 
 // Handling the form submission
-const handleSubmit = (e : any) => {
+const handleSubmit = (e) => {
 e.preventDefault();
-if (name === '' || password === '') {
+if (name === '' || email === '' ||  password === '') {
 setError(true);
 } else {
 setSubmitted(true);
