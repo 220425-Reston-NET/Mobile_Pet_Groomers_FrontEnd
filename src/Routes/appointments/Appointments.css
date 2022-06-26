@@ -1,0 +1,14 @@
+h1 {
+    background-color: rgb(112, 190, 243);
+    font-family:cursive;
+    font-size: 70px;
+    text-align: center;
+}
+
+h2 {
+    background-color: rgb(112, 190, 243);
+}
+
+DatePicker {
+    margin: auto;
+}

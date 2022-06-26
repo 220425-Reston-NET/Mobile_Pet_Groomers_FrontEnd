@@ -8,30 +8,16 @@ import Services from './Routes/services/Services';
 import Nav from './Components/NavBar';
 import Login from './Routes/login/login';
 import Register from './Routes/register/register';
-import Profile from './Components/profile';
-import { useAuth0 } from '@auth0/auth0-react';
-import LogoutButton from './Components/logout';
-import LoginButton from './Components/login';
+import Confirmedpage from './Routes/confirmed/confirmedpage';
+// import Profile from './Components/profile';
+// import { useAuth0 } from '@auth0/auth0-react';
+// import LogoutButton from './Components/logout';
+// import LoginButton from './Components/login';
 
 function App() {
-  const {isAuthenticated} = useAuth0();
-  
   return (
-  <div className="App">
-        {
-          isAuthenticated ?
-          <div>
-          <LogoutButton></LogoutButton>
-          <Profile></Profile>
-          </div>
-          :
-          <LoginButton></LoginButton>
-        }
-      </div>
-  );
-}
-
- 
+    // const {isAuthenticated} = useAuth0();
+  
  <>
  <Nav />
  <Routes> 
@@ -41,9 +27,25 @@ function App() {
    <Route path='/register' element={<Register/>}/>
    <Route path='/searchgroomers' element={<SearchGroomers/>}/>
    <Route path='/services' element={<Services/>}/>
+   <Route path='/confrimed' element={<Confirmedpage/>}/>
 
  </Routes>
     </>
+  // <div className="App">
+  //       {
+  //           isAuthenticated ?
+  //           <div>
+  //           <LogoutButton></LogoutButton>
+  //           <Profile></Profile>
+  //           </div>
+  //           :
+  //           <LoginButton></LoginButton>
+  //         }
+  //   </div>
+    );
+}
+
+ 
 
 
 export default App;

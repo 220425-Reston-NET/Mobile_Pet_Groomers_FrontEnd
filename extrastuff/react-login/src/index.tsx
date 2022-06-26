@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
 import { Auth0Provider } from '@auth0/auth0-react';
 
 const root = ReactDOM.createRoot(
@@ -15,13 +14,9 @@ root.render(
     domain="dev-e7x36sxc.us.auth0.com"
     clientId="ocS1vNj6ONiWTmYEPKYiUQ2UFHZBWn1L"
     redirectUri={window.location.origin}
-    >
-    <BrowserRouter> 
-    
-    <App /> 
-    </BrowserRouter>
+  >
+  <App />
   </Auth0Provider>
-    
   </React.StrictMode>
 );
 
