@@ -16,7 +16,7 @@ setName(e.target.value);
 setSubmitted(false);
 };
 
-// Handling the email change
+// handle the email 
 const handleEmail = (e) => {
 setEmail(e.target.value);
 setSubmitted(false);
