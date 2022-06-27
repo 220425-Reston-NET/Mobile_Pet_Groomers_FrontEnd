@@ -1,11 +1,18 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import "./Services.css";
 
 function Services() {
-  return (
+    
+    const navigate = useNavigate();
+    const goToNewCustInfo = () => {
+        navigate('/Searchgroomers');
+    }
+  
+    return (
     <>
-      <div>
-      <h1>Customer Information Form</h1>
+  <div>
+      <h1>Customer Services Form</h1>
   </div>
   <div>
       <h2>Please Enter Your Infomation Below :) </h2>
@@ -37,7 +44,7 @@ function Services() {
             <div className="text-center text-danger mb-3">Error sending message!</div>
         </div>
         <div className="d-grid">
-            <button className="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+            <button type="submit" className="btn btn-primary"><div onClick={goToNewCustInfo}>Submit</div></button>
         </div>
     </form>
 </div>

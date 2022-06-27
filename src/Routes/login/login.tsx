@@ -4,6 +4,10 @@ import ReactDOM from "react-dom";
 import "./login.css";
 
 function App() {
+  <header>
+  <h1>Welcome To Mobile Pet Groomers</h1>
+  </header>
+  
   // React States
   const [errorMessages, setErrorMessages] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -48,11 +52,6 @@ function App() {
     }
   };
 
-//   // Generate JSX code for error message
-//   const renderErrorMessage = (name : any) =>
-//     name === errorMessages.name && (
-//       <div className="error">{errorMessages.message}</div>
-//     );
 
   // JSX code for login form
   const renderForm = (
