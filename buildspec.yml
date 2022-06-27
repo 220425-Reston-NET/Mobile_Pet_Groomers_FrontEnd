@@ -6,5 +6,4 @@ phase:
 
 artifacts:
   files:
-  -'Dockerfile'
     - '**/*'
