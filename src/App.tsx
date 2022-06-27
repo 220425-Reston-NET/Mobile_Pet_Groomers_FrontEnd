@@ -9,6 +9,7 @@ import Nav from './Components/NavBar';
 import Login from './Routes/login/login';
 import Register from './Routes/register/register';
 import Confirmedpage from './Routes/confirmed/confirmedpage';
+import Welcome from './Routes/welcome/welcome';
 // import Profile from './Components/profile';
 // import { useAuth0 } from '@auth0/auth0-react';
 // import LogoutButton from './Components/logout';
@@ -23,7 +24,7 @@ function App() {
  <Routes> 
    <Route path='/appointments' element={<Appointments/>}/>
    <Route path='/' element={<Home/>}/>
-   <Route path='/login' element={<Login/>}/>
+   <Route path='/welcome' element={<Welcome/>}/>
    <Route path='/register' element={<Register/>}/>
    <Route path='/searchgroomers' element={<SearchGroomers/>}/>
    <Route path='/services' element={<Services/>}/>

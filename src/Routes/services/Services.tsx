@@ -12,7 +12,7 @@ function Services() {
     return (
     <>
   <div>
-      <h1>Customer Information Form</h1>
+      <h1>Customer Services Form</h1>
   </div>
   <div>
       <h2>Please Enter Your Infomation Below :) </h2>
