@@ -1,5 +1,10 @@
 version: 0.2
 
+phase:
+  commands:
+    -echo 'Hello'
+
 artifacts:
   files:
+  -'Dockerfile'
     - '**/*'
